@@ -4,9 +4,9 @@ import Link from "next/link";
 export default function HeaderLayout(){
     return(
         <>
-        {/* //   <!--==========================
-        //      HEADER PART START 
-        //  ==========================--> */}
+    {/* <!--==========================
+              HEADER PART START 
+     ==========================--> */}
         <header className="fixed top-0 left-0 w-full z-[30]">
             <div className="container !py-4">
                 <div className="flex justify-between items-center">
@@ -32,9 +32,9 @@ export default function HeaderLayout(){
             </div>
             </div>
         </header>
-{/* //  <!--==========================
-//         HEADER PART END 
-//  ==========================--> */}
+    {/* <!--==========================
+        HEADER PART END 
+    ==========================--> */}
 
 {/* // <!--==========================
 // SIDEBAR PART START 
@@ -109,6 +109,7 @@ export default function HeaderLayout(){
 {/* <!--==========================
 SIDEBAR PART START 
 ==========================--> */}
+
 </>
     )
 }

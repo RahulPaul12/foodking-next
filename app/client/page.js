@@ -61,6 +61,39 @@ export default function Home() {
      {/* <!--==============================
            HERO PART END 
      =================================--> */}
+
+     {/* 
+    <!--===============================
+        RESTAURANT ECOSYSTEM PART START 
+     =================================--> */}
+     <section className="py-16 md:py-20 lg:py-40">
+        <div className="container">
+            <div className="max-w-[934px] w-full mx-auto mb-12 sm:mb-16">
+                <h1 className="text-3xl lg:text-[42px] font-bold text-center leading-tight mb-6">FoodKing Comes Packed with<span className="gradient-text"> Everything to Maintain </span>Your Restaurant Ecosystem</h1>
+                 <p className="text-base lg:text-lg font-normal text-center lg:px-24">From admin to kitchen, dine-in to delivery, customers to delivery man, FoodKing connects every part of your restaurant for a seamless experience.</p>
+            </div>
+            <div className="flex flex-wrap gap-6">
+                <div className="bg-[#F6F9FC] rounded-2xl p-6 hover:shadow-card hover:bg-white transition-all duration-300 relative">
+                    <div className="flex items-start justify-between">
+                        <div className="w-9 h-9 rounded-full mb-6 flex items-center justify-center">
+                            <img width="20px" />
+                        </div>
+                        <div v-if="feature.addon" className="absolute right-0 shadow-badge">
+                            <div className="relative overflow-y-clip bg-linear-270 from-secondary to-primary">
+                                <div className="w-6 h-6 rotate-45 bg-primary absolute -left-3 "></div>
+                                <div className="p-1 h-6 text-sm font-semibold text-white flex items-center relative z-10">Add-On</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 className="text-2xl font-bold mb-3">Admin Panel</h6>
+                    <p className="text-base font-normal">Manage all branches, total business & monitor all activities centrally.</p>
+                </div>
+            </div>
+        </div>
+     </section>
+     {/* <!--===============================
+        RESTAURANT ECOSYSTEM PART END 
+     =================================--> */}
       </>
     );
   }
