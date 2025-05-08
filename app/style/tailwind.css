@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme{
+    --font-plus : Plus Jakarta Sans , sans-serif;
+    --color-primary: #FF006B;
+    --color-secondary: #FFA187;
+    --shadow-gradientBtn: 0px 8px 32px 0px rgba(255, 22, 107, 0.25);
+    --shadow-header: 0px 4px 32px 0px rgba(156, 174, 186, 0.18);
+    --shadow-card: 0px 16px 40px 0px rgba(1, 0, 54, 0.09);
+    --shadow-badge:0px 4px 20px rgba(255, 30, 109, 0.32);
+    --shadow-navbar: 0px 6px 12px 0px rgba(156, 174, 186, 0.06);
+    --shadow-stepcard: 0px 6px 16px 0px rgba(55, 106, 139, 0.04);
+    --shadow-blog: 0px 8px 20px 0px rgba(55, 106, 139, 0.06);
+    --shadow-connect : 0px 16px 60px 0px rgba(255, 100, 165, 0.08);
+    --shadow-input : 0px 10px 40px 0px rgba(255, 141, 182, 0.10);
+    --shadow-sidebar: 0px 8px 20px 0px rgba(55, 106, 139, 0.04);
+    --shadow-social-link : 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    --drop-shadow-icon: 2px 2px 2px rgba(0,0,0,0.25);
+    --drop-shadow-stepvector: 0px 4px 16px rgba(211, 138, 169, 0.16);
+    --drop-shadow-map-client: 0px 16px 40px rgba(124, 132, 139, 0.24);
+    --drop-shadow-quote: 0px 8px 32px rgba(255,22,107,0.25);
+    --drop-shadow-foodbank :2.571px 4.286px 12.857px rgba(230, 59, 95, 0.40);
+    --drop-shadow-foodscan :2.143px 2.143px 8.572px rgba(50, 121, 255, 0.40); 
+    --drop-shadow-foodappi :2.143px 2.143px 8.571px rgba(0, 138, 127, 0.40); 
+    --drop-shadow-shopking :2.143px 2.143px 8.571px rgba(245, 81, 20, 0.40); 
+    --drop-shadow-shopperzz :2.143px 2.143px 8.571px rgba(255, 101, 1, 0.40); 
+    --drop-shadow-storeking :2.4px 2.4px 9.001px rgba(0, 199, 30, 0.25); 
+}
+
+@layer base {
+     html{@apply scroll-smooth}
+     body{@apply font-plus text-[#323D4E] scroll-smooth}
+     h1,h2,h3,h4,h5,h6{@apply text-[#1A203C]}
+    .sticky-header {@apply backdrop-blur-xs shadow-header bg-white/90 }
+
+    .drawer{@apply fixed top-0 left-1/2 max-w-[95%] h-auto max-h-[calc(100%-150px)] w-full mx-auto bg-white px-4 py-6 transform -translate-y-full -translate-x-1/2 transition-all duration-300 z-50 shadow-sidebar rounded-2xl}
+    .drawer.active {@apply top-16 transform -translate-y-0}
+
+    .dropdown-group .dropdown-btn i {@apply rotate-0 transition-all duration-300}
+    .dropdown-group.active .dropdown-btn i {@apply rotate-180 transition-all duration-300}
+    .dropdown-group .dropdown-content {@apply hidden}
+    .dropdown-group.active .dropdown-content {@apply flex}
+    
+    .navbtn.active{@apply !bg-primary !text-white}
+    .navbtn:hover{@apply bg-linear-90 from-[#FFD8E8] to-white !text-black transition-all duration-300}
+
+    .vector-bg-1{@apply bg-linear-180 from-[#C1B9FF] to-[#6A57FF] shadow-[0px_8px_8px_rgba(117,99,255,0.25)]}
+    .vector-bg-2{@apply bg-linear-180 from-[#FFB1D2] to-[#EE2277] shadow-[0px_8px_8px_rgba(215,34,142,0.25)]}
+    .vector-bg-3{@apply bg-linear-180 from-[#FFC4AD] to-[#F86226] shadow-[0px_8px_8px_rgba(248,98,38,0.25)]}
+    .vector-bg-4{@apply bg-linear-180 from-[#DEAFFF] to-[#A62FFC] shadow-[0px_8px_8px_rgba(117,99,255,0.25)]}
+    .vector-bg-5{@apply bg-linear-180 from-[#A0D3FD] to-[#1889E4] shadow-[0px_8px_8px_rgba(24,137,228,0.25)]}
+    .vector-bg-6{@apply bg-linear-180 from-[#99E377] to-[#40A214] shadow-[0px_8px_8px_rgba(64,162,20,0.25)]}
+    .vector-bg-7{@apply bg-linear-180 from-[#A1ABF2] to-[#3F55E8] shadow-[0px_8px_8px_rgba(63,85,232,0.25)]}
+    .vector-bg-8{@apply bg-linear-180 from-[#FFC79D] to-[#F4781D] shadow-[0px_8px_8px_rgba(244,120,29,0.25)]}
+    .vector-bg-9{@apply bg-linear-180 from-[#F3A4D3] to-[#D7228E] shadow-[0px_8px_8px_rgba(215,34,142,0.25)]}
+
+    .gradient-text{@apply bg-linear-270 from-secondary to-primary text-transparent bg-clip-text}
+    .gradient-button{@apply bg-linear-270 from-secondary to-primary shadow-gradientBtn hover:from-primary hover:to-secondary transition-all duration-300 cursor-pointer}
+    .step-curve-bg{@apply rounded-[100%_100%_0%_0%/_10%_10%_0%_0%] lg:rounded-[60%_60%_0%_0%/_25%_25%_0%_0%] bg-linear-180 from-[#FFF4F8] from-0% to-[rgba(255,249,251,0.00)] to-[90.92%]}
+    .map-curve-bg{@apply rounded-[100%_100%_0%_0%/_20%_20%_0%_0%] lg:rounded-[100%_100%_0%_0%/_50%_50%_0%_0%] bg-linear-180 from-[#F1FFF6] from-0% to-[#f1fff657] to-100%}
+    .footer-curve-bg{@apply rounded-[100%_100%_0%_0%/_20%_20%_0%_0%] lg:rounded-[100%_100%_0%_0%/_50%_50%_0%_0%] bg-linear-180 from-[#FFEEF5] from-12% to-[#FFFBFA] to-100%}
+
+    #feature-1{@apply basis-[320px] grow xl:grow-0}
+    #feature-2{@apply basis-[486px] grow xl:grow-0}
+    #feature-3{@apply basis-[272px] grow xl:grow-0}
+    #feature-4{@apply basis-[366px] grow xl:grow-0}
+    #feature-5{@apply basis-[402px] grow xl:grow-0}
+    #feature-6{@apply basis-[310px] grow xl:grow-0}
+    #feature-7{@apply basis-[250px] grow xl:grow-0}
+    #feature-8{@apply basis-[332px] grow xl:grow-0}
+    #feature-9{@apply basis-[496px] grow xl:grow-0}
+    input::placeholder{@apply text-base font-normal text-[#7F8B9D]}
+
+    .thin-scrolling { @apply overflow-y-auto transition-all duration-500 }
+    .thin-scrolling:hover::-webkit-scrollbar-thumb { @apply bg-primary }
+    .thin-scrolling::-webkit-scrollbar { @apply w-[3px] }
+    .thin-scrolling::-webkit-scrollbar { @apply rounded-2xl bg-transparent }
+  }
+    
+  @layer utilities{
+      .container {
+          max-width: 1166px;
+          width: 100%;
+          padding: 0px 20px;
+          margin: auto;
+      }
+      .bg-custom-gradient {
+          background: linear-gradient(95deg, #F3FFF3 0%, #FFF4F8 29.81%, #ECF2FF 62.5%, #FFF7EF 100%);
+      }
+  }

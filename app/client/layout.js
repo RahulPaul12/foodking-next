@@ -1,3 +1,4 @@
+import FooterLayout from "@/layouts/FooterLayout";
 import HeaderLayout from "@/layouts/HeaderLayout";
 
 export default function ClientLayout({children}){
@@ -5,6 +6,7 @@ export default function ClientLayout({children}){
         <>
             <HeaderLayout />
             {children}
+            <FooterLayout/>
         </>
     );
 }
