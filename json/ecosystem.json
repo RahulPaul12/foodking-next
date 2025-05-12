@@ -1,0 +1,65 @@
+[
+    {
+        "id":1,
+        "vector":"/images/vector/01.png",
+        "name":"Admin Panel",
+        "desc":"Manage all branches, total business & monitor all activities centrally.",
+        "addon": false
+    },
+    {
+        "id":2,
+        "vector":"/images/vector/02.png",
+        "name":"Branch & Staffs Panel",
+        "desc":"Manage branch’s total business & monitor all activities centrally with advance report system.",
+        "addon": false
+    },
+    {
+        "id":3,
+        "vector":"/images/vector/03.png",
+        "name":"Customer Website",
+        "desc":"POS operator & chef/kitchen stuff have different panel.",
+        "addon": false
+    },
+    {
+        "id":4,
+        "vector":"/images/vector/04.png",
+        "name":"Customer App",
+        "desc":"Manage all branches, total business & monitor all user activities centrally.",
+        "addon": false
+    },
+    {
+        "id":5,
+        "vector":"/images/vector/05.png",
+        "name":"QR Code Table Ordering",
+        "desc":"Manage all branches, total business & monitor all user activities centrally.",
+        "addon": false
+    },
+    {
+        "id":6,
+        "vector":"/images/vector/06.png",
+        "name":"Delivery Man App",
+        "desc":"Manage all branches, total business & monitor activities.",
+        "addon": false
+    },
+    {
+        "id":7,
+        "vector":"/images/vector/07.png",
+        "name":"Merchant App",
+        "desc":"Manage all branches, total business & monitor all user",
+        "addon": true
+    },
+    {
+        "id":8,
+        "vector":"/images/vector/07.png",
+        "name":"Chef/Kitchen App",
+        "desc":"Manage all branches, total business & monitor all user activities centrally.",
+        "addon": true
+    },
+    {
+        "id":9,
+        "vector":"/images/vector/08.png",
+        "name":"Self-Ordering Kiosk App",
+        "desc":"Manage all branches, total business & monitor all user activities centrally.",
+        "addon": true
+    }
+]

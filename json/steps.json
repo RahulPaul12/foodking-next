@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "icon":"icon-cart",
+        "title": "Purchase FoodKing from Codecanyon",
+        "desc": "Buy FoodKing form Codecanyon & download the script package."
+    },
+    {
+        "id": 2,
+        "icon":"icon-server",
+        "title": "Install & Set Up to Your Server",
+        "desc": "Follow our installation guide to set up on your server."
+    },
+    {
+        "id": 3,
+        "icon":"icon-settings",
+        "title": "Configure Your Business Settings",
+        "desc": "Customize the whole admin panel for business."
+    },
+    {
+        "id": 4,
+        "icon":"icon-rocket",
+        "title": "Test & Launch Your Website",
+        "desc": "Once everything is set, you’re ready to go live!"
+    },
+    {
+        "id": 5,
+        "icon":"icon-plain",
+        "title": "Publish Apps in Play Store & App Store",
+        "desc": "Launch user app & delivery app in google play store and app store."
+    },
+    {
+        "id": 6,
+        "icon":"icon-chart-square",
+        "title": "Start Sale & Grow Your Business",
+        "desc": "Start accepting orders through the user app & website."
+    }
+]

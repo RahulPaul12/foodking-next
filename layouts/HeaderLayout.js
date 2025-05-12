@@ -1,13 +1,21 @@
+'use client'
+import useSticky from "@/hooks/useSticky";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function HeaderLayout(){
+    const sticky = useSticky()
+    const [sidebarOpen, setSidebaropen] = useState(false)
+    const handlesidebar=()=>{
+        setSidebaropen(!sidebarOpen)
+    }
     return(
         <>
     {/* <!--==========================
               HEADER PART START 
      ==========================--> */}
-        <header className="fixed top-0 left-0 w-full z-[30]">
+        <header className={`fixed top-0 left-0 w-full z-[30] ${sticky ? 'sticky-header':''}`}>
             <div className="container !py-4">
                 <div className="flex justify-between items-center">
                 <Link href={"/"}><img className="h-8 lg:h-9" src="/images/logo.png" alt="logo"/></Link>
@@ -25,7 +33,7 @@ export default function HeaderLayout(){
                         <Link href={"/signin"} className="text-primary text-base leading-5 font-bold">Sign In</Link>
                         <button className="py-3.5 px-6 rounded-full text-white gradient-button text-base leading-5 font-bold">Hire Us</button>
                     </div>
-                    <button className="lg:hidden block rounded-2xl">
+                    <button className="lg:hidden block rounded-2xl" onClick={handlesidebar}>
                         <i className="icon-hamburger-menu gradient-text text-2xl "></i>
                     </button>
                 </div>
@@ -34,12 +42,12 @@ export default function HeaderLayout(){
         </header>
     {/* <!--==========================
         HEADER PART END 
-    ==========================--> */}
+      ==========================--> */}
 
-{/* // <!--==========================
-// SIDEBAR PART START 
-// ==========================--> */}
-    <aside className="drawer thin-scrolling">
+   {/* <!--==========================
+          SIDEBAR PART START 
+    ==========================--> */}
+    <aside className={`drawer thin-scrolling ${sidebarOpen? 'active':''}`}>
         <nav className="flex flex-col text-[#1A203C] [&_a]:last:border-none">
                 <Link className="py-4 px-2 border-b border-[#E7EAEF]" href={"/"}><span className="text-base font-medium">Features</span></Link>
                 <Link className="py-4 px-2 border-b border-[#E7EAEF]" href={"/"}><span className="text-base font-medium">Demo</span></Link>
@@ -105,10 +113,9 @@ export default function HeaderLayout(){
         </nav>
         <button className="cursor-pointer mt-4 py-2.5 w-full sm:py-3.5 px-6 sm:px-8 rounded-full text-white text-base sm:text-lg leading-6 font-bold gradient-button">Hire Us</button>
     </aside>
-
-{/* <!--==========================
-SIDEBAR PART START 
-==========================--> */}
+   {/* <!--==========================
+          SIDEBAR PART START 
+    ==========================--> */}
 
 </>
     )
