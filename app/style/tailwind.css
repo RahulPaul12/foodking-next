@@ -88,3 +88,12 @@
           background: linear-gradient(95deg, #F3FFF3 0%, #FFF4F8 29.81%, #ECF2FF 62.5%, #FFF7EF 100%);
       }
   }
+
+  .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+  }
+
+  .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }

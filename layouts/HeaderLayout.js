@@ -21,7 +21,7 @@ export default function HeaderLayout(){
                 <Link href={"/"}><img className="h-8 lg:h-9" src="/images/logo.png" alt="logo"/></Link>
                 <div className="flex justify-between items-center gap-7">
                     <nav className="hidden lg:flex items-center gap-7 text-base leading-5 font-medium [&_a]:hover:text-primary">
-                        <Link href={"/features"}>Features</Link>
+                        <Link href={"/client/features"}>Features</Link>
                         <Link href={"/features"}>Demo</Link>
                         <Link href={"/features"}>Pricing</Link>
                         <Link href={"/features"}>Services</Link>
