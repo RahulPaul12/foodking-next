@@ -64,7 +64,6 @@ export default function useAutoplay({ tabSource, getScrollElements = () => ({ bt
   return {
     featureTabs,
     featureActive,
-    featureIndex,
     handleFeatureShow,
     handleFeatureLoop,
   };

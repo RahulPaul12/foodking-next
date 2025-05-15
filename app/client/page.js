@@ -14,7 +14,6 @@ export default function Home() {
     const {
         featureTabs,
         featureActive,
-        featureIndex,
         handleFeatureShow,
       } = useAutoplay({
         tabSource, 
@@ -152,7 +151,91 @@ export default function Home() {
                 <div className="w-full h-12 bg-[#FFA087] absolute left-0 right-0 top-1/2 -translate-y-1/2 -z-10 bg-linear-270 from-[#FFB19B] from-0% via-[#DCA4FF] via-50% to-[#FF97BD] to-100% blur-[30px]"></div>
                 <div className="lg:w-[580px] lg:h-[75px] bg-[#FFA087] blur-[300px] rotate-[35deg] absolute -bottom-0 left-1/4"></div>
             </div>
-            <div v-if="autoplaytab.featureActive.value == 1" className="mb-12 md:mb-16">
+            {featureActive== 1 && <div className="mb-12 md:mb-16">
+                    <div className="grid lg:grid-cols-12 gap-6 mb-6">
+                        <div className="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                                <div className="sm:py-8 ps-8 flex-shrink">
+                                    <h3 className="text-2xl md:text-3xl font-bold mb-4">Admin Dashboard</h3>
+                                    <p className="text-base font-normal overflow-ellipsis">The dashboard shows real-data where the admin can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
+                                </div>
+                                <img className="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/admin.png" alt="admin"/>
+                            </div>
+                        </div>
+                        <div className="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                            <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
+                                <div>
+                                    <h3 className="text-2xl font-bold mb-4">Built-in POS</h3>
+                                    <p className="text-base font-normal">Admin can create dine-in, takeaway, delivery order from POS & choose payment option also.</p>
+                                </div>
+                                <img className="max-w-[324px] h-[185px] w-full" src="/images/features/pos.png" alt="pos"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-12 gap-6">
+                        <div className="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                            <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
+                                <div>
+                                    <h3 className="text-2xl font-bold mb-4">QR Code Menu Maker</h3>
+                                    <p className="text-base font-normal">Admin can create QR code for each table and link to the restaurant’s menu where customers can order from table using this qr code.</p>
+                                </div>
+                                <img className="max-w-[324px] h-[166px] w-full" src="/images/features/qrcode.png" alt="qr_code"/>
+                            </div>
+                        </div>
+                        <div className="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                            <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                                <div className="sm:py-8 ps-8 flex-shrink">
+                                    <h3 className="text-2xl md:text-3xl font-bold mb-4">Add Items with Variations & Addon</h3>
+                                    <p className="text-base font-normal">In setting option in admin panel, admin can add item categories, items with variations & extras, item attributes, variation wise pricing, etc.</p>
+                                </div>
+                                <img className="w-[396px] h-[286px] flex-grow flex-shrink-0" src="/images/features/addon.png" alt="addon"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>}
+            {featureActive== 2 && <div className="mb-12 md:mb-16">
+                <div className="grid lg:grid-cols-12 gap-6 mb-6">
+                    <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div className="sm:py-8 ps-8 flex-shrink">
+                                <h3 className="text-2xl md:text-3xl font-bold mb-4">Admin Dashboard</h3>
+                                <p className="text-base font-normal overflow-ellipsis">The dashboard shows real-data where the admin can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
+                            </div>
+                            <img className="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/admin.png" alt="admin"/>
+                        </div>
+                    </div>
+                    <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
+                            <div>
+                                <h3 className="text-2xl font-bold mb-4">Built-in POS</h3>
+                                <p className="text-base font-normal">Admin can create dine-in, takeaway, delivery order from POS & choose payment option also.</p>
+                            </div>
+                            <img className="max-w-[324px] h-[185px] w-full" src="/images/features/pos.png" alt="pos"/>
+                        </div>
+                    </div>
+                </div>
+                <div className="grid grid-cols-12 gap-6">
+                    <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
+                        <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
+                            <div>
+                                <h3 className="text-2xl font-bold mb-4">QR Code Menu Maker</h3>
+                                <p className="text-base font-normal">Admin can create QR code for each table and link to the restaurant’s menu where customers can order from table using this qr code.</p>
+                            </div>
+                            <img className="max-w-[324px] h-[166px] w-full" src="/images/features/qrcode.png" alt="qr_code"/>
+                        </div>
+                    </div>
+                    <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
+                        <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
+                            <div className="sm:py-8 ps-8 flex-shrink">
+                                <h3 className="text-2xl md:text-3xl font-bold mb-4">Add Items with Variations & Addon</h3>
+                                <p className="text-base font-normal">In setting option in admin panel, admin can add item categories, items with variations & extras, item attributes, variation wise pricing, etc.</p>
+                            </div>
+                            <img className="w-[396px] h-[286px] flex-grow flex-shrink-0" src="/images/features/addon.png" alt="addon"/>
+                        </div>
+                    </div>
+                </div>
+            </div>}
+            {featureActive== 3 && <div className="mb-12 md:mb-16">
                 <div className="grid lg:grid-cols-12 gap-6 mb-6">
                     <div className="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
                         <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
@@ -193,8 +276,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div v-if="autoplaytab.featureActive.value == 2" className="mb-12 md:mb-16">
+            </div>}
+            {featureActive== 4 && <div className="mb-12 md:mb-16">
                 <div className="grid lg:grid-cols-12 gap-6 mb-6">
                     <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
                         <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
@@ -235,92 +318,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div v-if="autoplaytab.featureActive.value == 3" className="mb-12 md:mb-16">
-                <div className="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div className="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
-                        <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div className="sm:py-8 ps-8 flex-shrink">
-                                <h3 className="text-2xl md:text-3xl font-bold mb-4">Admin Dashboard</h3>
-                                <p className="text-base font-normal overflow-ellipsis">The dashboard shows real-data where the admin can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
-                            </div>
-                            <img className="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/admin.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div className="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
-                        <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
-                            <div>
-                                <h3 className="text-2xl font-bold mb-4">Built-in POS</h3>
-                                <p className="text-base font-normal">Admin can create dine-in, takeaway, delivery order from POS & choose payment option also.</p>
-                            </div>
-                            <img className="max-w-[324px] h-[185px] w-full" src="/images/features/pos.png" alt="pos"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid grid-cols-12 gap-6">
-                    <div className="col-span-12 lg:col-span-4 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
-                        <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
-                            <div>
-                                <h3 className="text-2xl font-bold mb-4">QR Code Menu Maker</h3>
-                                <p className="text-base font-normal">Admin can create QR code for each table and link to the restaurant’s menu where customers can order from table using this qr code.</p>
-                            </div>
-                            <img className="max-w-[324px] h-[166px] w-full" src="/images/features/qrcode.png" alt="qr_code"/>
-                        </div>
-                    </div>
-                    <div className="col-span-12 lg:col-span-8 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
-                        <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div className="sm:py-8 ps-8 flex-shrink">
-                                <h3 className="text-2xl md:text-3xl font-bold mb-4">Add Items with Variations & Addon</h3>
-                                <p className="text-base font-normal">In setting option in admin panel, admin can add item categories, items with variations & extras, item attributes, variation wise pricing, etc.</p>
-                            </div>
-                            <img className="w-[396px] h-[286px] flex-grow flex-shrink-0" src="/images/features/addon.png" alt="addon"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div v-if="autoplaytab.featureActive.value == 4" className="mb-12 md:mb-16">
-                <div className="grid lg:grid-cols-12 gap-6 mb-6">
-                    <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
-                        <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div className="sm:py-8 ps-8 flex-shrink">
-                                <h3 className="text-2xl md:text-3xl font-bold mb-4">Admin Dashboard</h3>
-                                <p className="text-base font-normal overflow-ellipsis">The dashboard shows real-data where the admin can see business analytics, order statistics, sales summary, orders summary, most popular items and so on.</p>
-                            </div>
-                            <img className="w-[414px] h-[286px] flex-grow flex-shrink-0" src="/images/features/admin.png" alt="admin"/>
-                        </div>
-                    </div>
-                    <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
-                        <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4">
-                            <div>
-                                <h3 className="text-2xl font-bold mb-4">Built-in POS</h3>
-                                <p className="text-base font-normal">Admin can create dine-in, takeaway, delivery order from POS & choose payment option also.</p>
-                            </div>
-                            <img className="max-w-[324px] h-[185px] w-full" src="/images/features/pos.png" alt="pos"/>
-                        </div>
-                    </div>
-                </div>
-                <div className="grid grid-cols-12 gap-6">
-                    <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] px-6 pt-6 rounded-2xl border border-[#FFDCE8]">
-                        <div className="flex flex-col sm:flex-row lg:flex-col justify-between items-center gap-4 ">
-                            <div>
-                                <h3 className="text-2xl font-bold mb-4">QR Code Menu Maker</h3>
-                                <p className="text-base font-normal">Admin can create QR code for each table and link to the restaurant’s menu where customers can order from table using this qr code.</p>
-                            </div>
-                            <img className="max-w-[324px] h-[166px] w-full" src="/images/features/qrcode.png" alt="qr_code"/>
-                        </div>
-                    </div>
-                    <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
-                        <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
-                            <div className="sm:py-8 ps-8 flex-shrink">
-                                <h3 className="text-2xl md:text-3xl font-bold mb-4">Add Items with Variations & Addon</h3>
-                                <p className="text-base font-normal">In setting option in admin panel, admin can add item categories, items with variations & extras, item attributes, variation wise pricing, etc.</p>
-                            </div>
-                            <img className="w-[396px] h-[286px] flex-grow flex-shrink-0" src="/images/features/addon.png" alt="addon"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div v-if="autoplaytab.featureActive.value == 5" className="mb-12 md:mb-16">
+            </div>}
+            {featureActive== 5 && <div className="mb-12 md:mb-16">
                 <div className="grid lg:grid-cols-12 gap-6 mb-6">
                     <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
                         <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
@@ -361,8 +360,8 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div v-if="autoplaytab.featureActive.value == 6" className="mb-12 md:mb-16">
+            </div>}
+            {featureActive== 6 && <div className="mb-12 md:mb-16">
                 <div className="grid lg:grid-cols-12 gap-6 mb-6">
                     <div className="col-span-12 lg:col-span-6 bg-[#FCF6F8] pt-8 rounded-2xl border border-[#FFDCE8]">
                         <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 overflow-hidden">
@@ -403,7 +402,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>}
             <button className="py-3.5 px-6 rounded-full text-white gradient-button block mx-auto text-lg font-bold">Explore All Features</button>
         </div>
     </section>
