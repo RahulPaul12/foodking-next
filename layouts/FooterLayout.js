@@ -2,9 +2,44 @@ import Link from "next/link";
 
 export default function FooterLayout () {
   return (
-//     <!--===============================
-//     FOOTER PART START 
-// =================================-->
+    <>
+        {/* <!--===============================
+               CONNECT US PART START 
+     =================================--> */}
+    <section className="-mb-70 lg:-mb-50 relative z-10">
+        <div className="container">
+            <div className="w-full p-8 sm:p-12 md:p-16 relative z-10 rounded-3xl overflow-hidden shadow-connect bg-white">
+                <span className="absolute top-16 -left-14 -z-10 w-64 h-48 rounded-full -rotate-6 blur-[100px] bg-[#FFEBE3]"></span>
+                <span className="absolute -bottom-8 -right-11 -z-10 w-96 h-48 rounded-full -rotate-6 blur-[150px] bg-[#FFE3EF]"></span>
+                <div className="grid grid-cols-12 gap-y-12">
+                    <div className="col-span-12 md:col-span-5 lg:pr-3">
+                        <h2 className="text-3xl lg:text-[42px] font-bold mb-6 leading-tight md:text-start text-center">
+                            <span className="gradient-text">Connect with Us </span>for the Latest Updates
+                        </h2>
+                        <p className="text-sm font-normal md:text-start text-center">
+                            We recommended you to subscribe to our newsletter for the latest updates & offers, drop your email to get daily update about FoodKing.
+                        </p>
+                    </div>
+                    <div className="col-span-12 md:col-span-7">
+                        <form className="md:ml-12 lg:ml-27" aria-label="Subscribe to newsletter">
+                            <label htmlFor="name" className="sr-only">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Enter your name" className="px-6 w-full rounded-full shadow-input h-[52px] outline-none mb-4 bg-white" required/>
+                            <label htmlFor="email" className="sr-only">Email</label>
+                            <input id="email" name="email" type="email" placeholder="Enter your email" className="px-6 w-full rounded-full shadow-input h-[52px] outline-none mb-4 bg-white" required/>
+                            <button type="submit" className="float-start md:float-end cursor-pointer py-2.5 sm:py-3.5 px-6 rounded-full text-white text-base sm:text-lg leading-6 font-bold gradient-button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    {/* <!--===============================
+              CONNECT US  PART END 
+     =================================--> */}
+
+{/* <!--===============================
+FOOTER PART START 
+// =================================--> */}
     <footer className="pt-[330px] lg:pt-75 footer-curve-bg">
         <div className="container">
             <div className="grid grid-cols-12 gap-y-12 sm:gap-x-10 pb-12">
@@ -105,10 +140,10 @@ export default function FooterLayout () {
             </div>
         </div>
     </footer>
-// <!--===============================
-//     FOOTER PART END 
-// =================================-->
-
+{/* <!--===============================
+FOOTER PART END 
+ =================================--> */}
+</>
   );
 };
 
