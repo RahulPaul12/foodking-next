@@ -22,7 +22,7 @@ export default function HeaderLayout(){
                 <div className="flex justify-between items-center gap-7">
                     <nav className="hidden lg:flex items-center gap-7 text-base leading-5 font-medium [&_a]:hover:text-primary">
                         <Link href={"/client/features"}>Features</Link>
-                        <Link href={"/features"}>Demo</Link>
+                        <Link href={"/client/demo"}>Demo</Link>
                         <Link href={"/features"}>Pricing</Link>
                         <Link href={"/features"}>Services</Link>
                         <Link href={"/features"}>Resources</Link>
