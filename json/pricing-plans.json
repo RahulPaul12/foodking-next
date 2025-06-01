@@ -1,0 +1,66 @@
+
+[
+    { 
+        "id": 1,
+        "title": "Essential",
+        "subtitle": "Begin with a small but powerful step.",
+        "icon": "icon-fill-flash",
+        "regular_price": 199,
+        "extended_price":289,
+        "most_popular": false,
+        "features": [
+            { "id": 1, "type": true, "name": "Admin Panel" },
+            { "id": 2, "type": true, "name": "Branch Manager Panel" },
+            { "id": 3, "type": true, "name": "POS Operator Panel" },
+            { "id": 4, "type": true, "name": "Chef/Kitchen (KDS) Panel" },
+            { "id": 5, "type": true, "name": "Customer Website" },
+            { "id": 6, "type": true, "name": "Customer App" },
+            { "id": 7, "type": true, "name": "Delivery Boy App" },
+            { "id": 8, "type": false, "name": "Chef/Kitchen (KDS) App" },
+            { "id": 9, "type": false, "name": "Self-Ordering Kiosk App" },
+            { "id": 10, "type": false, "name": "Marchant/Manager App" }
+        ]
+    },
+    { 
+        "id": 2,
+        "title": "Advanced",
+        "subtitle": "Begin with a small but powerful step.",
+        "icon": "icon-fill-medal",
+        "regular_price": 299,
+        "extended_price":389,
+        "most_popular": true,
+        "features": [
+            { "id": 1, "type": true, "name": "Admin Panel" },
+            { "id": 2, "type": true, "name": "Branch Manager Panel" },
+            { "id": 3, "type": true, "name": "POS Operator Panel" },
+            { "id": 4, "type": true, "name": "Chef/Kitchen (KDS) Panel" },
+            { "id": 5, "type": true, "name": "Customer Website" },
+            { "id": 6, "type": true, "name": "Customer App" },
+            { "id": 7, "type": true, "name": "Delivery Boy App" },
+            { "id": 8, "type": true, "name": "Chef/Kitchen (KDS) App" },
+            { "id": 9, "type": true, "name": "Self-Ordering Kiosk App" },
+            { "id": 10, "type": false, "name": "Marchant/Manager App" }
+        ]
+    },
+    { 
+        "id": 3,
+        "title": "Complete",
+        "subtitle": "Begin with a small but powerful step.",
+        "icon": "icon-fill-crown",
+        "regular_price": 399,
+        "extended_price":489,
+        "most_popular": false,
+        "features": [
+            { "id": 1, "type": true, "name": "Admin Panel" },
+            { "id": 2, "type": true, "name": "Branch Manager Panel" },
+            { "id": 3, "type": true, "name": "POS Operator Panel" },
+            { "id": 4, "type": true, "name": "Chef/Kitchen (KDS) Panel" },
+            { "id": 5, "type": true, "name": "Customer Website" },
+            { "id": 6, "type": true, "name": "Customer App" },
+            { "id": 7, "type": true, "name": "Delivery Boy App" },
+            { "id": 8, "type": true, "name": "Chef/Kitchen (KDS) App" },
+            { "id": 9, "type": true, "name": "Self-Ordering Kiosk App" },
+            { "id": 10, "type": true, "name": "Marchant/Manager App" }
+        ]
+    }
+]

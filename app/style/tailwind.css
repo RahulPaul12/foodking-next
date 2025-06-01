@@ -69,6 +69,7 @@
     .vector-bg-9{@apply bg-linear-180 from-[#F3A4D3] to-[#D7228E] shadow-[0px_8px_8px_rgba(215,34,142,0.25)]}
 
     .gradient-text{@apply bg-linear-270 from-secondary to-primary text-transparent bg-clip-text}
+    .gradient-text-btn {@apply border border-secondary rounded-full text-transparent bg-clip-text hover:bg-clip-border hover:text-white !shadow-none hover:!shadow-[0px_8px_32px_0px_rgba(255,22,107,0.25)]}
     .gradient-button{@apply bg-linear-270 from-secondary to-primary shadow-gradientBtn hover:from-primary hover:to-secondary transition-[bg] duration-300 cursor-pointer}
     .whatsapp-gradient{@apply bg-linear-270 from-[#2AE971] to-[#00B142] shadow-whatsapp hover:from-[#00B142] hover:to-[#2AE971] transition-all duration-300 cursor-pointer}
 

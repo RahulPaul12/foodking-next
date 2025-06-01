@@ -1,0 +1,67 @@
+
+[
+    {
+        "id":1,
+        "name":"Nomadi",
+        "desc":"Nomadi Sushi & Noodle, located in Blankenberge, Belgium offers fresh sushi, flavorful noodle dishes, and Asian specialties in a cozy setting. Known for friendly service and quality ingredients, it’s a local favorite for casual dining or takeout.",
+        "img":"/images/global-customer/nomadi.png",
+        "country":"Belgium",
+        "flag":"/images/flags/Belgium.png"
+    },
+    {
+        "id":2,
+        "name":"Al Mallah",
+        "desc":"Al Mallah is a popular Lebanese street food spot in Dubai, known for its tasty shawarmas, falafel, and fresh juices. With its vibrant vibe and long-standing reputation, it’s a go-to for quick, authentic bites.",
+        "img":"/images/global-customer/al-mallah.png",
+        "country":"UAE",
+        "flag":"/images/flags/uae.png"
+    },
+    {
+        "id":3,
+        "name":"Maguro House",
+        "desc":"Maguro House is a Japanese restaurant in Canada, offering a diverse menu that includes sushi, sashimi, ramen, and more. Known for its fresh ingredients and flavorful dishes, it has become a local favorite for Japanese cuisine enthusiasts.",
+        "img":"/images/global-customer/maguro-house.png",
+        "country":"Canada",
+        "flag":"/images/flags/Canada.png"
+    },
+    {
+        "id":4,
+        "name":"Donde Pipe",
+        "desc":"Donde Pipe Comida Rápida is a popular eatery in Spain, offering a variety of fast food options including burgers, hot dogs, and salchipapas. Known for its flavorful dishes and friendly service, it's a go-to spot of seeking quick and satisfying meals.",
+        "img":"/images/global-customer/donde-pipe.png",
+        "country":"Spain",
+        "flag":"/images/flags/Spain.png"
+    },
+    {
+        "id":5,
+        "name":"Fuoco",
+        "desc":"Fuoco is a popular fast-casual restaurant in Dhaka, known for its signature Meatbox, cheesy platters, and loaded fast food. With several branches across the city, it’s a go-to spot for bold flavors and satisfying meals.",
+        "img":"/images/global-customer/fuoco.png",
+        "country":"Bangladesh",
+        "flag":"/images/flags/Bangladesh.png"
+    },
+    {
+        "id":6,
+        "name":"Life with Cacao",
+        "desc":"Life with Cacao is a Kuwaiti café offering a premium all-day dining experience focused on chocolate. Known for its desserts, breakfast, and savory dishes, it’s a favorite across the GCC for sweet and cozy moments.",
+        "img":"/images/global-customer/cacao.png",
+        "country":"Kuwait",
+        "flag":"/images/flags/Kuwait.png"
+    },
+    {
+        "id":7,
+        "name":"Switch Food",
+        "desc":"Switch Food is a modern Moroccan fast-casual restaurant known for blending traditional flavors with contemporary twists. With locations in cities like Casablanca and Rabat, it’s popular for its tagines, couscous, and creative wraps.",
+        "img":"/images/global-customer/switch-food.png",
+        "country":"Morocco",
+        "flag":"/images/flags/Morocco.png"
+    },
+    {
+        "id":8,
+        "name":"Bubbles Cafe",
+        "desc":"Bubbles Caffe in Bujumbura, Burundi, is a cozy spot offering a range of local and international dishes, along with unique services like a barbershop and spa. It’s a unique destination for both dining and relaxation.",
+        "img":"/images/global-customer/bubbles-cafe.png",
+        "country":"Burundi",
+        "flag":"/images/flags/Burundi.png"
+    }
+]

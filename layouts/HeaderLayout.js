@@ -23,7 +23,7 @@ export default function HeaderLayout(){
                     <nav className="hidden lg:flex items-center gap-7 text-base leading-5 font-medium [&_a]:hover:text-primary">
                         <Link href={"/client/features"}>Features</Link>
                         <Link href={"/client/demo"}>Demo</Link>
-                        <Link href={"/features"}>Pricing</Link>
+                        <Link href={"/client/pricing"}>Pricing</Link>
                         <Link href={"/features"}>Services</Link>
                         <Link href={"/features"}>Resources</Link>
                         <Link href={"/features"}>Company</Link>

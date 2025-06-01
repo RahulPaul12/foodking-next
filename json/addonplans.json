@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"Merchant App",
+        "subtitle":"Smart control of your restaurant business right from your phone.",
+        "regular_price": 39,
+        "extended_price":199,
+        "logo":"/images/addon/pricing/merchant.png"
+    },
+    {
+        "id":2,
+        "name":"Chef/Kitchen App",
+        "subtitle":"Kitchen display that shows real-time orders, prep status, and priorities.",
+        "regular_price": 39,
+        "extended_price":199,
+        "logo":"/images/addon/pricing/kitchen.png"
+    },
+    {
+        "id":3,
+        "name":"Self-Ordering Kiosk App",
+        "subtitle":"A kiosk app that lets customers browse, and place orders on their own.",
+        "regular_price": 39,
+        "extended_price":299,
+        "logo":"/images/addon/pricing/kds.png"
+    }
+]

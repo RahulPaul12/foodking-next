@@ -3,19 +3,73 @@
         "id":1,
         "title":"FoodKing - iNiLabs' Most Popular Mobile Development Item of 2023 ",
         "date":"24 April, 2023",
-        "coverimage":"/images/blog/FoodKing - iNiLabs' Most Popular Mobile Development Item of 2023.png"
+        "coverimage":"/images/blog/foodking-popular.png"
     },
     {
         "id":2,
         "title":"FoodKing vs FoodAppi : The Best Solution for Restaurant Orders Management",
         "date":"24 April, 2023",
-        "coverimage":"/images/blog/FoodKing vs. FoodAppi_ The Best Solution for Restaurant Orders.png"
+        "coverimage":"/images/blog/FoodKingvsFoodAppi.png"
     },
     {
         "id":3,
         "title":"What's New in FoodKing V3.0!",
         "date":"24 April, 2023",
-        "coverimage":"/images/blog/foodking update 3 1.png"
+        "coverimage":"/images/blog/foodking-3.1.png"
+    },
+    {
+        "id":4,
+        "title":"FoodKing - iNiLabs' Most Popular Mobile Development Item of 2023 ",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/foodking-popular.png"
+    },
+    {
+        "id":5,
+        "title":"FoodKing vs FoodAppi : The Best Solution for Restaurant Orders Management",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/FoodKingvsFoodAppi.png"
+    },
+    {
+        "id":6,
+        "title":"What's New in FoodKing V3.0!",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/foodking-3.1.png"
+    },
+    {
+        "id":7,
+        "title":"FoodKing - iNiLabs' Most Popular Mobile Development Item of 2023 ",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/foodking-popular.png"
+    },
+    {
+        "id":8,
+        "title":"FoodKing vs FoodAppi : The Best Solution for Restaurant Orders Management",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/FoodKingvsFoodAppi.png"
+    },
+    {
+        "id":9,
+        "title":"What's New in FoodKing V3.0!",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/foodking-3.1.png"
+    },
+    {
+        "id":10,
+        "title":"FoodKing - iNiLabs' Most Popular Mobile Development Item of 2023 ",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/foodking-popular.png"
+    },
+    {
+        "id":11,
+        "title":"FoodKing vs FoodAppi : The Best Solution for Restaurant Orders Management",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/FoodKingvsFoodAppi.png"
+    },
+    {
+        "id":12,
+        "title":"What's New in FoodKing V3.0!",
+        "date":"24 April, 2023",
+        "coverimage":"/images/blog/foodking-3.1.png"
     }
 
 ]
