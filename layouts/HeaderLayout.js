@@ -24,9 +24,138 @@ export default function HeaderLayout(){
                         <Link href={"/client/features"}>Features</Link>
                         <Link href={"/client/demo"}>Demo</Link>
                         <Link href={"/client/pricing"}>Pricing</Link>
-                        <Link href={"/features"}>Services</Link>
-                        <Link href={"/features"}>Resources</Link>
-                        <Link href={"/features"}>Company</Link>
+
+                        {/* <!--========================
+                               SERVICE PART START 
+                        ==========================--> */}
+                        <div className="relative group">
+                            <button className="capitalize font-medium group-hover:text-primary">services</button>
+                            <div className="absolute top-12 left-0 z-10 w-[260px] p-4 rounded-3xl shadow-paper bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100">
+                                <Link href={"/client/installation"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                    <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-blue bg-gradient-to-l from-[#73C3FF] to-[#007EDD]">
+                                        <i className="icon-fill-install text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                    </span>
+                                    <span className="text-base font-semibold capitalize whitespace-nowrap">
+                                        Installation
+                                    </span>
+                                </Link>
+                                <Link href={"/client/customization"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                    <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-orange bg-gradient-to-l from-[#FFC773] to-[#DD3500]">
+                                        <i className="icon-fill-install text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                    </span>
+                                    <span className="text-base font-semibold whitespace-nowrap">
+                                        Customization
+                                    </span>
+                                </Link>
+                                <Link href={"/client/maintanence"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                    <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#52EA7C] to-[#1CB803]">
+                                        <i className="icon-music-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                    </span>
+                                    <span className="text-base font-semibold whitespace-nowrap">
+                                        iCare Maintenance
+                                    </span>
+                                </Link>
+                            </div>
+                        </div>
+                        {/* <!--========================
+                                SERVICE PART END 
+                         ==========================--> */}
+
+                        {/* <!--========================
+                              RESOURCES PART START 
+                        ==========================--> */}
+                        <div className="relative group">
+                        <button className="capitalize font-medium group-hover:text-primary">Resources</button>
+                        <div className="absolute top-12 left-0 z-10 w-[260px] p-4 rounded-3xl shadow-paper bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100">
+                            <Link href={"/documentation"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-blue bg-gradient-to-l from-[#FF62A6] to-[#ED0067]">
+                                    <i className="icon-clipboard-text text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold capitalize whitespace-nowrap">
+                                    Documentation
+                                </span>
+                            </Link>
+                            <Link href={"/client/blogs"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-orange bg-gradient-to-l from-[#B077FF] to-[#7918FF]">
+                                    <i className="icon-document-text text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold whitespace-nowrap">
+                                    Blogs
+                                </span>
+                            </Link>
+                            <Link href={"#"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#FFB973] to-[#DD5C00]">
+                                    <i className="icon-video-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold whitespace-nowrap">
+                                    Videos
+                                </span>
+                            </Link>
+                            <Link href={"#"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#52EA7C] to-[#1CB803]">
+                                    <i className="icon-people text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold whitespace-nowrap">
+                                    Community
+                                </span>
+                            </Link>
+                            <Link href={"/faq"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#73C3FF] to-[#007EDD]">
+                                    <i className="icon-message-question text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold whitespace-nowrap">
+                                    FAQs
+                                </span>
+                            </Link>
+                            <Link href={"#"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#7AA0FF] to-[#034BFF]">
+                                    <i className="icon-music-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold whitespace-nowrap">
+                                    Support
+                                </span>
+                            </Link>
+                        </div>
+                        </div>
+                        {/* <!--========================
+                              RESOURCES PART START 
+                         ==========================--> */}
+
+                        {/* <!--========================
+                               COMPANY PART START 
+                        ==========================--> */}
+                       <div className="relative group">
+                        <button className="capitalize font-medium group-hover:text-primary">Company</button>
+                        <div className="absolute top-12 left-0 z-10 w-[260px] p-4 rounded-3xl shadow-paper bg-white transition-all duration-300 origin-top scale-y-0 group-hover:scale-y-100">
+                            <Link href={"#"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-blue bg-gradient-to-l from-[#FF62A6] to-[#ED0067]">
+                                    <i className="icon-clipboard-text text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold capitalize whitespace-nowrap">
+                                    About Us
+                                </span>
+                            </Link>
+                            <Link href={"#"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-orange bg-gradient-to-l from-[#B077FF] to-[#7918FF]">
+                                    <i className="icon-document-text text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold whitespace-nowrap">
+                                    Contact Us
+                                </span>
+                            </Link>
+                            <Link href={"/testimonial"} className="peer w-full flex items-center gap-4 p-4 rounded-xl transition-all duration-300 hover:text-primary hover:bg-[#F3FBFF]">
+                                <span className="w-[30px] h-[30px] flex-shrink-0 flex items-center justify-center rounded-full drop-shadow-green bg-gradient-to-l from-[#FFB973] to-[#DD5C00]">
+                                    <i className="icon-video-play text-lg text-transparent bg-clip-text drop-shadow-icon bg-gradient-to-b from-white/90 to-white/60"></i>
+                                </span>
+                                <span className="text-base font-semibold whitespace-nowrap">
+                                    Testimonial
+                                </span>
+                            </Link>
+                        </div>
+                       </div>
+                       {/* <!--========================
+                             COMPANY PART START 
+                        ==========================--> */}
                         <Link href={"/features"}>Partner</Link>
                     </nav>
                     <div className="hidden lg:flex items-center gap-7 ">
@@ -37,7 +166,7 @@ export default function HeaderLayout(){
                         <i className="icon-hamburger-menu gradient-text text-2xl "></i>
                     </button>
                 </div>
-            </div>
+                </div>
             </div>
         </header>
     {/* <!--==========================

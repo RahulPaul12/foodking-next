@@ -4,5 +4,35 @@
         "name":"Home",
         "route":"/client",
         "img":"'/images/demo/home.jpg'"
-    } 
+    }, 
+    {
+        "id":2,
+        "name":"Pricing",
+        "route":"/client/pricing",
+        "img":"'/images/demo/pricing.jpg'"
+    },
+    {
+        "id":3,
+        "name":"Features",
+        "route":"/client/features",
+        "img":"'/images/demo/features.jpg'"
+    },
+    {
+        "id":4,
+        "name":"Demo",
+        "route":"/client/demo",
+        "img":"'/images/demo/demo.jpg'"
+    },
+    {
+        "id":5,
+        "name":"Installation",
+        "route":"/client/installation",
+        "img":"'/images/demo/installation.jpg'"
+    },
+    {
+        "id":6,
+        "name":"Blogs",
+        "route":"/client/blogs",
+        "img":"'/images/demo/blogs.jpg'"
+    }
 ]
