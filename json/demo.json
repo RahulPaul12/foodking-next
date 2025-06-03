@@ -34,5 +34,11 @@
         "name":"Blogs",
         "route":"/client/blogs",
         "img":"'/images/demo/blogs.jpg'"
+    },
+    {
+        "id":7,
+        "name":"Customization",
+        "route":"/client/customization",
+        "img":"'/images/demo/customization.jpg'"
     }
 ]
