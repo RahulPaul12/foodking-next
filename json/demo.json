@@ -40,5 +40,29 @@
         "name":"Customization",
         "route":"/client/customization",
         "img":"'/images/demo/customization.jpg'"
+    },
+    {
+        "id":8,
+        "name":"Documentation",
+        "route":"/client/documentation",
+        "img":"'/images/demo/documentation.jpg'"
+    },
+    {
+        "id":9,
+        "name":"Maintanence",
+        "route":"/client/maintanence",
+        "img":"'/images/demo/maintanence.jpg'"
+    },
+    {
+        "id":10,
+        "name":"Testimonial",
+        "route":"/client/testimonial",
+        "img":"'/images/demo/testimonial.jpg'"
+    },
+    {
+        "id":11,
+        "name":"Faq",
+        "route":"/client/faq",
+        "img":"'/images/demo/faq.jpg'"
     }
 ]

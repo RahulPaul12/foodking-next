@@ -81,7 +81,7 @@ export default function Home() {
                 </div>
                 <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
                     <p className="text-base"><span className="font-bold">4.9 </span>out of 5 based on<span className="font-bold"> 50+ reviews</span></p>
-                    <img className="ms-1 h-5 w-fit" src="/images/vector/codecannyon.png"/>
+                    <img className="ms-1 h-5 w-fit" src="/images/envato/codecannyon.png"/>
                 </div>
             </div>
             <div className="relative">
