@@ -2,6 +2,8 @@ import {Plus_Jakarta_Sans } from "next/font/google";
 import "./style/tailwind.css";
 import "@/public/icon/iconly.css";
 
+import ReduxProvider from "@/redux/store/ReduxProvider";
+
 const plusjakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
@@ -14,10 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${plusjakarta.variable} antialiased`}
-      >
-        {children}
+      <body className={`${plusjakarta.variable} antialiased`}>
+        <ReduxProvider>
+            {children}
+        </ReduxProvider>
       </body>
     </html>
   );

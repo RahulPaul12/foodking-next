@@ -36,8 +36,8 @@
 }
 
 @layer base {
-     html{@apply scroll-smooth sm:overflow-x-auto overflow-x-hidden}
-     body{@apply font-plus text-[#323D4E] scroll-smooth sm:overflow-x-visible overflow-x-hidden}
+     html{@apply !scroll-smooth sm:overflow-x-auto overflow-x-hidden}
+     body{@apply font-plus text-[#323D4E] !scroll-smooth sm:overflow-x-visible overflow-x-hidden}
      h1,h2,h3,h4,h5,h6{@apply text-[#1A203C]}
 
  

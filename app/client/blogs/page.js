@@ -1,17 +1,21 @@
 'use client'
 import blogs from "@/json/blogs.json"
+import { setBlog } from "@/redux/store/blogSlice"
 import Link from "next/link"
 import { useState } from "react"
+import { useDispatch } from "react-redux"
 export default function Blogs(){
 
     const categories = ['All', 'Recent', 'News', 'Article', 'Comparison']
     const [activeCategory, setActiveCategory] = useState("All")
     const [isOpen, setIsOpen] = useState(false)
 
+    const dispatch = useDispatch();
+
     return(
         <>
      {/* <!--===============================
-           HERO PART START 
+                 HERO PART START 
      =================================--> */}
         <section className="pt-26 lg:pt-38 mb-8 sm:mb-12">
            <span className="bg-linear-180 from-[#ffc4dc] to-white blur-[350px] w-full absolute -z-10 top-0 h-[400px]"></span>
@@ -34,12 +38,12 @@ export default function Blogs(){
            </div>
         </section>
      {/* <!--==============================
-           HERO PART END 
+                 HERO PART END 
      =================================--> */}
 
 
      {/* <!--===============================
-             BLOGS PART START 
+               BLOGS PART START 
      =================================--> */}
      <section className="mb-20 sm:mb-40">
         <div className="container">
@@ -78,7 +82,7 @@ export default function Blogs(){
                         <h6 className="mb-6 flex-grow line-clamp-2 px-6 pt-6 text-lg font-bold leading-7">{ blog.title }</h6>
                         <div className="flex justify-between gap-x-6 gap-y-3 px-6 pb-6 flex-wrap lg:flex-nowrap">
                             <span className="text-lg font-medium leading-tight">{ blog.date }</span>
-                            <Link href={`/blogs/${blog.id}`} className="text-primary font-medium text-lg leading-tight">Read more</Link>
+                            <Link href={`/client/blogs/${blog.id}`} onClick={()=>dispatch(setBlog(blog))} className="text-primary font-medium text-lg leading-tight">Read more</Link>
                         </div>
                     </div>
                     ))
@@ -95,7 +99,7 @@ export default function Blogs(){
         </div>
      </section>
     {/* <!--===============================
-             BLOGS PART START 
+               BLOGS PART START 
      =================================--> */}
         </>
     )
