@@ -133,12 +133,12 @@ export default function Demo (){
                         globalbusiness.map((customer,index)=>(
                             <div key={index} className="p-6 sm:p-8 rounded-2xl bg-linear-0 from-[#fff] to-[#FFFAFC] shadow-stepcard">
                                 <div>
-                                    <img className="w-full h-full mb-8" src="customer.img"/>
+                                    <img className="w-full h-full mb-8" src={`${customer.img}`}/>
                                 </div>
                                 <div className="flex justify-between mb-4">
                                     <h3 className="text-[28px] sm:text-[32px] font-bold leading-tight">{ customer.name }</h3>
                                     <div className="flex items-center gap-2 px-4 py-2 rounded-full shadow-country">
-                                        <img className="w-5 sm:w-6" src="customer.flag"/>
+                                        <img className="w-5 sm:w-6" src={`${customer.flag}`}/>
                                         <span className="text-sm sm:text-base font-medium">{ customer.country }</span>
                                     </div>
                                 </div>
