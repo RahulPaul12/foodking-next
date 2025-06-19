@@ -17,6 +17,7 @@
     "react-redux": "^9.2.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.11.3",
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"
   }
