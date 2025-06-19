@@ -1,5 +1,5 @@
 import features from '@/json/ecosystem.json'
-import globalbusiness from '@/json/globalBusiness.json'
+import globalbusiness from '../../../json/globalbusiness.json'
 export default function Demo (){
 
     return (
